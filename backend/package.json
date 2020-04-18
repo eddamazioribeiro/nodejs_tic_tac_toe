@@ -1,0 +1,33 @@
+{
+  "name": "tictactoe_backend",
+  "version": "1.0.0",
+  "description": "Backend struture of the Tic Tac Toe game using the Node Js",
+  "main": "src/app.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddamazioribeiro/nodejs_tic_tac_toe.git"
+  },
+  "keywords": [
+    "Tic",
+    "Tac",
+    "Toe",
+    "Node",
+    "Js"
+  ],
+  "author": "eddamazioribeiro; renan-sa",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/eddamazioribeiro/nodejs_tic_tac_toe/issues"
+  },
+  "homepage": "https://github.com/eddamazioribeiro/nodejs_tic_tac_toe#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
