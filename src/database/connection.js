@@ -1,6 +1,6 @@
 'use strict'
 
-var mongoose = require('mongoose')
+var mongoose = require('mongoose');
 
 module.exports = (dbConnection) => {
     mongoose.connect(dbConnection, {
@@ -9,9 +9,8 @@ module.exports = (dbConnection) => {
         useFindAndModify: false,
         useUnifiedTopology: true
     }).then(() => {
-        console.log('DB connected!')
+        console.log('DB connected!');
     }).catch((err) => {
-        console.log(`Error connecting to the database: ${err}`)
+        console.log(`Error connecting to the database: ${err}`);
     });
 }
-
