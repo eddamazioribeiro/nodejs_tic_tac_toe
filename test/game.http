@@ -1,0 +1,51 @@
+###
+GET http://localhost:3000/api/game/list HTTP/1.1
+
+###
+GET http://localhost:3000/api/game/return?id=6031672d8a2c4b512e01846a HTTP/1.1
+
+###
+POST http://localhost:3000/api/game/start HTTP/1.1
+content-type: application/json
+
+{
+    "playerOne": {
+        "name": "Player 1",
+        "score": 0
+    },
+    "playerTwo": {
+        "name": "Player 2",
+        "score": 0
+    },
+    "matchMoves": []
+}
+
+###
+PUT http://localhost:3000/api/game/update?id=6031672d8a2c4b512e01846a HTTP/1.1
+content-type: application/json
+
+{
+    "playerOne": {
+        "name": "Player 1",
+        "score": 0
+    },
+    "playerTwo": {
+        "name": "Player 2",
+        "score": 0
+    },
+    "matchMoves": [
+        {
+            "player": "Player 1",
+            "movment": {
+                "positionX": 1,
+                "positionY": 1
+            }
+        }
+    ]
+}
+
+###
+DELETE http://localhost:3000/api/game/remove?id=6031672d8a2c4b512e01846a HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/game/clear HTTP/1.1
